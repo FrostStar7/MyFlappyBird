@@ -11,7 +11,7 @@ public class birdController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -19,7 +19,7 @@ public class birdController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            rb2d.velocity = new Vector2(0, 5);
+            rb2d.velocity = new Vector2(0, 7);
         }
     }
 }
