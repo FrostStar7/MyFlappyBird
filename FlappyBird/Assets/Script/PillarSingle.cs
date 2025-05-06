@@ -8,7 +8,7 @@ public class PillarSingle : MonoBehaviour
 
     public float movespeed;
     public bool isMove;
-    
+
     
     private void FixedUpdate()
     {
@@ -28,8 +28,13 @@ public class PillarSingle : MonoBehaviour
         float height = UnityEngine.Random.Range(-2.6f, 1.88f);
         transform.position = new Vector3(transform.position.x, height, transform.position.z);
     }
-    
-    
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        GameObject.Find("GameManager").GetComponent<gameManager>().GameOver();
+        Debug.Log("GameOver");
+    }
+
     
     
 }

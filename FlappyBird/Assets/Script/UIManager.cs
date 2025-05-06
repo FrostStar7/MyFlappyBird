@@ -25,6 +25,6 @@ public class UIManager : MonoBehaviour
         {
             gameObject.SetActive(false);
         };
-        Debug.Log("点击");
+        //Debug.Log("点击");
     }
 }
