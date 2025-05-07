@@ -12,7 +12,7 @@ public class UIManager : MonoBehaviour
     
     public void ShowUI()
     {
-        canvasgroup.DOFade(1, 0.5f).onComplete = () =>
+        canvasgroup.DOFade(1, 0.25f).onComplete = () =>
         {
             gameObject.SetActive(true);
         };
@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour
 
     public void HideUI()
     {
-        canvasgroup.DOFade(0, 0.5f).onComplete = () =>
+        canvasgroup.DOFade(0, 0.25f).onComplete = () =>
         {
             gameObject.SetActive(false);
         };
